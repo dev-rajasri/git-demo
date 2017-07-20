@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<style type="text/css">
+	.linkedin{
+		background-color: #3A5795;
+		color: white;
+		height: 100px;
+		width: 100px;
+		position: relative;
+		-webkit-animation: myanimation 3s;
+
+}
+/*@-webkit-keyframes myanimation{
+	from{background: green}
+	to{background:#3A5795}
+}*/
+@-webkit-keyframes myanimation{
+	0% {
+		background: red;left: 0px;top: 0px
+	}
+	25% {
+		background: blue;left: 200px;top: 0px
+	}
+	50% {
+		background: yellow;left: 200px;top: 200px
+	}
+	75% {
+		background: green;left: 0px;top: 200px
+	}
+}
+	.facebook{
+		background-color: rgb(222,224,85);
+		height: 100px;
+		width: 100px;
+	}
+
+	.microsoft{
+		background-color: #31af37;
+		height: 100px;
+		width: auto;
+	}
+	.great{
+		background-color: #5a3479;
+	}
+	</style>
+</head>
+<body>
+<!-- div is division which groups block elements -->
+<div class="linkedin">
+	<p>Linkedin</p>
+</div>
+<div class="facebook">
+	<p>Facebook</p>
+</div>
+<div class="microsoft">
+	<p>Google is <span class="great">great</span></p>
+</div>
+
+</body>
+</html>
