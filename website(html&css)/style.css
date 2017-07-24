@@ -1,8 +1,9 @@
 #container{
 
 	width: 1050px;
-	border :1px solid grey;
+	/*border :1px solid grey;*/
 	margin: 0 auto;
+	
 }
 #brand{
 	float: left;
@@ -81,4 +82,21 @@ transition: font-size 0.3s ease;
 	font-size: 20px;
 	font-weight: bold;
 	color: #B314D8;
+}
+#introduction{
+	background: linear-gradient(#E5F2BB,#B7E952);
+	padding:30px;
+	margin:16px 0 ;
+
+}
+#introduction h3{
+font-size: 45px;
+color: #316901;
+font-weight: normal;
+}
+#introduction p{
+	font-size: 25px;
+	color: #628F19;
+	text-align: justify;
+
 }
