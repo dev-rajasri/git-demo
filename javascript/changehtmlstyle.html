@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>change html style</title>
+	<style type="text/css">
+	.linkedin{
+		background-color: #3A5795;
+		/*color: white;*/
+		height: 100px;
+		width: auto;
+	}
+	.facebook{
+		background-color: rgb(222,224,85);
+		height: 100px;
+		width: auto;
+	}
+	.microsoft{
+		background-color: #31af37;
+		height: 100px;
+		width: auto;
+	}
+	.great{
+		background-color: #5a3479;
+	}
+	</style>
+</head>
+<body>
+<!-- div is division which groups block elements -->
+<div id="linkedin" class="linkedin">
+	<p>Linkedin</p>
+</div>
+<div id="facebook" class="facebook">
+	<p>Facebook</p>
+</div>
+<div id="microsoft" class="microsoft">
+	<p>Google is <span class="great">great</span></p>
+</div>
+<button id="button1">change linkedin style</button>
+<button id="button2">change facebook style</button>
+<script>
+	document.getElementById('button1').onclick=function(){
+
+		document.getElementById('linkedin').style.width='200px';
+	    document.getElementById('linkedin').style.backgroundColor='ORANGE';
+	}
+	document.getElementById("button2").ondblclick=function(){
+		document.getElementById('facebook').style.fontFamily='monospace';
+		document.getElementById('facebook').style.fontSize='3em';
+	}
+</script>
+</body>
+</html>
