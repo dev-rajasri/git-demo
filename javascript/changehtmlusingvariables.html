@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change html using variables</title>
+	<style type="text/css">
+	.linkedin{
+		background-color: #3A5795;
+		/*color: white;*/
+		height: 100px;
+		width: auto;
+	}
+	.facebook{
+		background-color: rgb(222,224,85);
+		height: 100px;
+		width: auto;
+	}
+	.microsoft{
+		background-color: #31af37;
+		height: 100px;
+		width: auto;
+	}
+	.great{
+		background-color: #5a3479;
+	}
+	</style>
+</head>
+<body>
+<!-- div is division which groups block elements -->
+<div id="linkedin" class="linkedin">
+	<p>Linkedin</p>
+</div>
+<div id="facebook" class="facebook">
+	<p>Facebook</p>
+</div>
+<div id="microsoft" class="microsoft">
+	<p>Google is <span class="great">great</span></p>
+</div>
+<button id="button1">change linkedin style</button>
+<button id="button2">change facebook style</button>
+<script>
+var color='rgb(18,149,68)';
+document.getElementById("button1").onclick=function(){
+document.getElementById('linkedin').style.backgroundColor=color;
+}
+var x,y,z,facebookColor;
+x=Math.round(Math.random()*256);
+document.getElementById("button2").onclick=function(){
+x=Math.round(Math.random()*256);
+y=Math.round(Math.random()*256);
+z=Math.round(Math.random()*256);
+facebookColor='rgb('+x+','+y+','+z+')';
+document.getElementById("facebook").style.backgroundColor=facebookColor;
+document.getElementById("facebook").innerHTML=facebookColor;
+}
+</script>
+</body>
+</html>
