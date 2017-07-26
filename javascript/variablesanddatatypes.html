@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>variables and datatypes</title>
+	<style type="text/css">
+	.linkedin{
+		background-color: #3A5795;
+		/*color: white;*/
+		height: 100px;
+		width: auto;
+	}
+	.facebook{
+		background-color: rgb(222,224,85);
+		height: 100px;
+		width: auto;
+	}
+	.microsoft{
+		background-color: #31af37;
+		height: 100px;
+		width: auto;
+	}
+	.great{
+		background-color: #5a3479;
+	}
+	</style>
+</head>
+<body>
+<!-- div is division which groups block elements -->
+<div id="linkedin" class="linkedin">
+	<p>Linkedin</p>
+</div>
+<div id="facebook" class="facebook">
+	<p>Facebook</p>
+</div>
+<div id="microsoft" class="microsoft">
+	<p>Google is <span class="great">great</span></p>
+</div>
+<button id="button1">change linkedin style</button>
+<button id="button2">change facebook style</button>
+<script>
+var x = 3;
+window.console.log(x);
+var y;
+y = 5;
+var z;
+window.console.log("The value of z is :"+ z);
+z=x+y;
+window.console.log("The value of z is :" +z);
+z=x+" "+y;
+window.console.log("The value of z is:" + z);
+window.console.log("The type of z is :"+ typeof(z));
+var greeting="Hello";
+var fname="Rajasri Reddy";
+var msg=greeting+" "+fname;
+window.console.log("The type of message is:" + typeof(msg));
+var check=(x==3);
+window.console.log("The value of check is:" +check);
+window.console.log("The value of check is:" + typeof(check));
+var myArray=[1,2,3];
+window.console.log(myArray);
+window.console.log("The type of Array is:"+typeof(myArray));
+</script>
+</body>
+</html>
