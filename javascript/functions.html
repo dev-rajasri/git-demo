@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions</title>
+	<style type="text/css">
+	.linkedin{
+		background-color: #3A5795;
+		/*color: white;*/
+		height: 100px;
+		width: auto;
+	}
+	.facebook{
+		background-color: rgb(222,224,85);
+		height: 100px;
+		width: auto;
+	}
+	.microsoft{
+		background-color: #31af37;
+		height: 100px;
+		width: auto;
+	}
+	.great{
+		background-color: #5a3479;
+	}
+	</style>
+</head>
+<body>
+<!-- div is division which groups block elements -->
+<div id="linkedin" class="linkedin">
+	<p>Linkedin</p>
+</div>
+<div id="facebook" class="facebook">
+	<p>Facebook</p>
+</div>
+<div id="microsoft" class="microsoft">
+	<p>Google is <span class="great">great</span></p>
+</div>
+<button id="button1" onclick="swap('linkedin','facebook')">swap content of linkedin and facebook</button>
+ <button id="button2" onclick="swap('facebook','microsoft')">swap content of facebook and microsoft</button> 
+<script>
+function greeting1(){
+	window.alert('Hello');
+}
+// greeting1();
+
+function greeting2(fname){
+	window.alert('Hai Raj' +fname +'!');
+}
+// greeting2('Reddy');
+function sum(a,b){
+	return a+b;
+}
+var x=sum(3,7);
+// window.alert(x);
+function swap(id1,id2){
+	var y=document.getElementById(id1).innerHTML;
+	var z=document.getElementById(id2).innerHTML;
+document.getElementById(id2).innerHTML=y;
+document.getElementById(id1).innerHTML=z;
+}
+</script>
+</body>
+</html>
