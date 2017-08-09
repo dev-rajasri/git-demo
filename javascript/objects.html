@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects</title>
+	
+</head>
+<body>
+<p>Javascript</p>
+<script>
+	var myPhone={
+		make : "Lenovo",
+		model : "Lenovo VibeK4 Note",
+		warranty : 12,
+		color : "black"
+	};
+	window.console.log(myPhone);
+	delete myPhone.warranty;
+	window.console.log(myPhone);
+	window.console.log(myPhone.model);
+	var myOtherPhone=myPhone;
+	window.console.log(myOtherPhone);
+	myOtherPhone.model="Redmi";
+	window.console.log(myOtherPhone);
+	window.console.log(myPhone);
+</script>
+</body>
+</html>
