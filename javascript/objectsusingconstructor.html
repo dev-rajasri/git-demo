@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects using constructor</title>
+	
+</head>
+<body>
+<p>Javascript</p>
+<script>
+function phone(make, model, warranty, color){
+	this.make = make;
+	this.model = model;
+	this.warranty= warranty;
+	this.color = color;
+	this.extendwarrenty = function(x){
+		this.warranty = this.warranty + x;
+	}
+}
+var myPhone = new phone("Apple","Iphone 5",12,"white");
+window.console.log(myPhone);
+myPhone.extendwarrenty(12);
+window.console.log(myPhone.warranty);
+</script>
+</body>
+</html>
