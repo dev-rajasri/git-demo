@@ -9,7 +9,30 @@
 <script>
 	// var shoppingList = ["bread","eggs" , "milk"];
 	var shoppingList = new Array("bread","eggs","milk");
-	document.getElementById("myParagraph").innerHTML=shoppingList;
+	showResult (shoppingList);
+	showResult (shoppingList[0]);
+	showResult (shoppingList[2]);
+	function showResult(x){
+	document.getElementById("myParagraph").innerHTML+="<br>"+x;
+}
+shoppingList[1]="orange";
+showResult(shoppingList);
+delete shoppingList[0];
+showResult(shoppingList);
+shoppingList[0]="yogurt";
+showResult(shoppingList);
+shoppingList.splice(1,1);
+showResult(shoppingList);
+shoppingList.splice(1,0,"banana","apple");
+showResult(shoppingList);
+shoppingList.sort();
+showResult(shoppingList);
+shoppingList.reverse();
+showResult(shoppingList);
+var myString="Hi this is rajasri";
+var myArray=myString.split(' ',2);
+showResult(myArray);
+
 
 
 
